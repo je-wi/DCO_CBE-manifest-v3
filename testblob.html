@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title></title>
+  </head>
+  <body>
+  
+      <button type="button" id="downloadButton">downtest</button> 
+  
+  
+  <script>
+  
+document.addEventListener("DOMContentLoaded", function(event) { 
+
+
+
+
+  document.querySelector('#downloadButton').addEventListener("click", function(el) {
+  console.log('click');
+  
+      var myurl = 'https://journals.ub.uni-heidelberg.de/index.php/dco/article/download/73784/67491';
+      var request = new XMLHttpRequest();
+      request.open('GET', myurl, true);
+      request.responseType = 'blob';
+ 
+console.log('start');      
+      
+      request.onload = function() {
+        var reader = new FileReader();
+        reader.readAsDataURL(request.response);
+        reader.onload =  function(e){
+            console.log('DataURL:', e.target.result);
+        };
+        reader.onerror = function(event) {
+            console.log("Failed to read file!\n\n" + reader.error);
+          };
+      };
+      request.send();        
+    
+    
+  }); 
+});       
+      
+  
+  
+  
+
+  
+  
+  </script>
+
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <title>DCO CBE</title>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/browser.js"></script> 
+    <script src="js/extension.functions.js"></script>       
+    <script src="js/popup.js"></script> 
+  </head>
+  
+  
+  <body class="dco_cbe_popup_body">
+  
+    <div id="popup_div_cbe">
+      <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td align="left"><h1 id="popup_h1" class="localize" data-localize="popupTitle">title here</h1></td>
+          
+          <td align="right">
+            <label id="popup_switch_cbe" class="switch">
+              <input type="checkbox" id="isActiveSwitch">
+              <span class="slider round"></span>
+            </label>           
+          </td>                  
+        </tr>
+      </table>
+    </div>
+      
+    <br />
+      
+      
+    <div id="popup_div_content" class="display_none">
+      <div class="m10">  
+        <h2 id="popup_h2_lv" class="localize" data-localize="popupContentTitleLV">LVI</h2> 
+          <label id="popup_switch_lv" class="switch">
+            <input type="checkbox" id="LVisActive">
+            <span class="slider round"></span>
+          </label> 
+      </div>
+      
+<!--
+      <div class="float_left m10">         
+        <h2 id="popup_h2_lve" class="localize" data-localize="popupContentTitleLVE">LVE</h2> 
+          <label id="popup_switch_lve" class="switch">
+            <input type="checkbox" id="LVEisActive">
+            <span class="slider round"></span>
+          </label>   
+      </div>
+//-->
+      
+      <div id="popup_div_lvstart" class="clear_left display_none">
+        <button id="popup_button_lvstart" class="localize popup_button" data-localize="startButton">Start</button>       
+      </div>      
+    <br />   
+    <br />         
+    </div>
+    
+    <div id="popup_div_iss" class="clear_left display_none">
+      <button id="popup_button_iss" class="localize popup_button" data-localize="issButton">Try it</button>  
+    <br />   
+    <br />             
+    </div>        
+    
+    <br />   
+    <br />       
+    <div id="popup_div_options" class="clear_left">
+      <button id="popup_button_options" class="localize popup_button" data-localize="optionsButton">Extension Options</button>       
+    </div>
+  </body>
+</html>

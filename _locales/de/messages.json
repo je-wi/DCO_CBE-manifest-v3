@@ -1,0 +1,28 @@
+{
+"popupTitle": { "message": "DCO CBE de" },
+"saveButton": { "message": "Speichern" }, 
+"cancelButton": { "message": "Schließen" },
+"loadOpt": { "message": "Geladen" }, 
+"savedOpt": { "message": "Gespeichert" },
+"popupContentTitleLV": { "message": "LV Intern" },
+"popupContentTitleLVE": { "message": "LV Extern" },
+"startButton": { "message": "Jetzt Prüfen" },
+"issButton": { "message": "DCO Archive öffnen" },
+"downloadXML": { "message": "XML-Verzeichnis herunterladen" },
+"downloadAllPDF" : { "message": "Alle PDF herunterladen" },
+"downloadAllPDFasBlob" : { "message": "Alle PDF als Base64-encoded XML herunterladen" },
+"stopDownloads" : { "message": "Download stoppen" },
+"resumeDownloads" : { "message": "Download wiederaufnehmen" },
+"bulkdownload" : { "message": "Es handelt sich um einen Massendownload. Trotzdem fortfahren?" },
+"optionsTitle": { "message": "DCO Einstellungen" },
+"optionsTitle1": { "message": "Journal-Einstellung" },
+"optionsTitle2": { "message": "LV" },
+"optionsTitle3": { "message": "BD" },
+"optionsButton": { "message": "Einstellungen" },
+"option1": { "message": "Verzögerung pro Link in Sekunden" }, 
+"option2": { "message": "Journal URL (z.B.: https://journals.ub.uni-heidelberg.de)" }, 
+"option3": { "message": "Journal Kurzname (z.B.: dco)" },
+"option4": { "message": "Massendownload Durchgänge" },
+"option5": { "message": "Intervall in Sekunden" }
+
+}
