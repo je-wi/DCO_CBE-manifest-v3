@@ -1,7 +1,5 @@
 # DCO_CBE
 
-The extension was developed in Manifest v2 (MV2).
-
 Due to some changes in the extension programming Manifest V3 (MV3) a simple migration from MV2 to MV3 is not possible. The extension must be adapted in many areas for this purpose. Because of the currently unclear support of Manifest v3 in the various browsers, the extension is explicitly named after version 2, so that no ambiguity can arise regarding v3 compatibility.
 
 The extension uses following JavaScript APIs:
