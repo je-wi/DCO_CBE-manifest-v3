@@ -1,5 +1,5 @@
 # DCO_CBE
-![Screen](/readme_img/dco_cbe_01)
+![Screen](/readme_img/dco_cbe_01.jpg)
 
 
 Due to some changes in the extension programming Manifest V3 (MV3) a simple migration from MV2 to MV3 is not possible. The extension must be adapted in many areas for this purpose. Because of the currently unclear support of Manifest v3 in the various browsers, the extension is explicitly named after version 3.
