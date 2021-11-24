@@ -41,7 +41,8 @@ For each article are listed:
 * DOI
 * URN (no longer supported since 2021)
 
-![Screen](/readme_img/003_download.jpg)
+![Screen](/readme_img/dco_cbe_bd_01.jpg)
+![Screen](/readme_img/dco_cbe_bd_02.jpg)
 
 ### XML-Directory
 The displayed archive page can be downloaded as an XML file.
