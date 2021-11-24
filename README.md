@@ -101,8 +101,10 @@ The PDF galleys of all issues and their individual contributions can be download
 As for PDF, only in the form of XML with Base64 encoded string.
 
 ### Stop downloading
+Does exactly what it claims to do.
 
 ### Resume downloading
+The automatic download can be interrupted when the window or tab lose focus and no interaction happens. The API Reference for Manifest Version 3 recommends working with chrome.alarms to schedule code to run periodically or at a specified time in the future.
 
 ## Options
 * Journal URL
