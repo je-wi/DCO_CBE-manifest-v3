@@ -13,7 +13,7 @@ The extension uses following JavaScript APIs:
 * tabs
 
 ### v04
-* LV extern: removed
+* LV extern: removed (CORS policy)
 * DCO Archive: stop downloading
 * DCO Archive: resume downloading
 
@@ -100,8 +100,11 @@ The PDF galleys of all issues and their individual contributions can be download
 ### Download all Issues as XML
 As for PDF, only in the form of XML with Base64 encoded string.
 
-## Options
+### Stop downloading
 
+### Resume downloading
+
+## Options
 * Journal URL
 * Journal Shortname
 * Validation delay in seconds
