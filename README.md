@@ -23,8 +23,8 @@ The extension uses following JavaScript APIs:
 ## Link Validation
 Looks for all a-Tags in the active Tab and marks them with an extra class, the attribute "dco_m" andd the attribute "href_origin". With the button in the popup everey marked url can validate with a HEAD-request.
 
-![Screen](/readme_img/001_lv.jpg)
-![Screen](/readme_img/002_lv.jpg)
+![Screen](/readme_img/dco_cbe_lv_01.jpg)
+![Screen](/readme_img/dco_cbe_lv_02.jpg)
 
 ### LV intern
 Top- and second-level domian must be the same to mark the link.
