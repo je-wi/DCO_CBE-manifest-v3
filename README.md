@@ -3,32 +3,19 @@
 Due to some changes in the extension programming Manifest V3 (MV3) a simple migration from MV2 to MV3 is not possible. The extension must be adapted in many areas for this purpose. Because of the currently unclear support of Manifest v3 in the various browsers, the extension is explicitly named after version 3.
 
 The extension uses following JavaScript APIs:
-* browserAction
+* action
+* activeTab
 * downloads
 * i18n
 * runtime
+* scripting
 * storage
 * tabs
 
-### v01
-Initial Version from CBE
-
-### v02
-* LV intern: validate all inern links
-* LV extern: validate all extern links
-* DCO Archive: show all issues with articles in one site
-* DCO Archive: download all issues with articles as XML-Directory
-* DCO Archive: download all PDF-galleys at once
-* Options:
-  * Validation delay in seconds
-  * Journal URL
-  * Journal Shortname
-
-### v03
-* DCO Archive: download all PDF-galleys at once as XML
-* Options:
-  * Download count
-  * Download interval in seconds
+### v04
+* LV extern: removed
+* DCO Archive: stop downloading
+* DCO Archive: resume downloading
 
 ## Link Validation
 Looks for all a-Tags in the active Tab and marks them with an extra class, the attribute "dco_m" andd the attribute "href_origin". With the button in the popup everey marked url can validate with a HEAD-request.
@@ -38,16 +25,6 @@ Looks for all a-Tags in the active Tab and marks them with an extra class, the a
 
 ### LV intern
 Top- and second-level domian must be the same to mark the link.
-
-### LV extern
-(Must be considered as deprecated. Modern Browsers block most of the XMLHttpRequests to extern domains by CORS policy: 
-```javascript
-.. has been blocked by CORS policy: 
-Response to preflight request doesn't pass access control check: 
-No 'Access-Control-Allow-Origin' header is present on the requested resource.
-```
-
-Top- and second-level domain must not be the same to mark the link.
 
 ## DCO Archive
 
