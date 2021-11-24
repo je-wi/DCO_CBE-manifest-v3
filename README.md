@@ -16,6 +16,7 @@ The extension uses following JavaScript APIs:
 * LV extern: removed (CORS policy)
 * DCO Archive: stop downloading
 * DCO Archive: resume downloading
+* DCO Archive: downloads are shuffled before being placed in the queue
 
 ## Link Validation
 Looks for all a-Tags in the active Tab and marks them with an extra class, the attribute "dco_m" andd the attribute "href_origin". With the button in the popup everey marked url can validate with a HEAD-request.
