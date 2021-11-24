@@ -117,4 +117,4 @@ The automatic download can be interrupted when the window or tab lose focus and 
 * Download count
 * Download interval in seconds
 
-![Screen](/readme_img/004_options.jpg)
+![Screen](/readme_img/dco_cbe_opt_01.jpg)
