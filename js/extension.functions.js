@@ -631,7 +631,15 @@ function fisherYatesShuffleArray(arr)
     }
   }  
   
+/* getCurrentTab
+   Manifest V3 (promise)
+*/
   
+async function getCurrentTab() {
+  let queryOptions = { active: true, lastFocusedWindow: true };
+  let [tab] = await browser.tabs.query(queryOptions);
+  return tab;
+}    
   
   
 
@@ -871,27 +879,33 @@ function listenTabActivated(info)
    
   } 
   
+
+  
+  
 /* listenTabUpdated
       
    @need browser.storage
    @use browser.tabs.onUpdated.addListener(listenTabUpdated);
 */
-function listenTabUpdated(info)
+async function listenTabUpdated(info)
   {
+  
+  const tab = await getCurrentTab();
+
    browser.storage.local.get(null, function(data)
     { 
-    browser.tabs.get(data.tabId, function(tab) 
-      {
+    
+//    browser.tabs.get(data.tabId, function(tab) 
+//      {
       var url = data.option2+'/index.php/'+data.option3+'/issue/archive';
       if (browser.runtime.lastError) 
         console.log('There was an error getting tab: \n' + browser.runtime.lastError.message);      
-      
-      if( !browser.runtime.lastError && tab.status == 'complete' && tab.url == url && !data.archiveAdd)
+
+     
+     if( !browser.runtime.lastError && tab.status == 'complete' && tab.url == url && !data.archiveAdd)
         {
         // first three 'loading'-events an then one 'complete'
         // dom manipulation will not trigger the event
-
-       
         // injection the archive scripts here
         const tabId = tab.id;
 
@@ -945,10 +959,11 @@ function listenTabUpdated(info)
               }); 
                           
 
-        browser.storage.local.set({ archiveAdd: true }, function() { }); 
+        browser.storage.local.set({ archiveAdd: true, tabId: tabId }, function() { }); 
         }//end if
 
-      }); 
+      //}); 
+      
     });   
   }   
 
